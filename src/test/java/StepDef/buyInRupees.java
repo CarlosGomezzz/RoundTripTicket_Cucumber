@@ -29,6 +29,15 @@ public class buyInRupees {
 		BrowserUtilities.waitFor(2);
 		hp.toInputBox.sendKeys(ConfigReader.getProperty("toAirport"));
 		hp.SEA.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		hp.nextMonth.click();
+		
 	}
 
 	@When("user chooses a flight")

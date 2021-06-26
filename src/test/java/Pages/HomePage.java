@@ -42,4 +42,7 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[1]/div[2]/div[1]/div[3]/label/span")
 	public WebElement departure;
 
+	@FindBy(xpath = "//span[@aria-label='Next Month']")
+	public WebElement nextMonth;
+
 }
