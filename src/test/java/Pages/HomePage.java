@@ -39,4 +39,7 @@ public class HomePage {
 	@FindBy(xpath = "//p[@class='font12 lightGreyText textCenter latoBold appendBottom15 defaultCursor']")
 	public WebElement annoyingPopup;
 
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[1]/div[2]/div[1]/div[3]/label/span")
+	public WebElement departure;
+
 }
