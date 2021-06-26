@@ -30,13 +30,13 @@ public class HomePage {
 	@FindBy(xpath = "//li[@id='react-autowhatever-1-section-0-item-2']")
 	public WebElement IAD;
 
-	@FindBy(xpath = "//input[@data-cy='toCity']")
-	public WebElement toButton;
-
-	@FindBy(xpath = "//input[@class='react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused']")
+	@FindBy(xpath = "//input[@aria-controls='react-autowhatever-1']")
 	public WebElement toInputBox;
 
 	@FindBy(xpath = "//li[@id='react-autowhatever-1-section-0-item-0']")
 	public WebElement SEA;
+
+	@FindBy(xpath = "//p[@class='font12 lightGreyText textCenter latoBold appendBottom15 defaultCursor']")
+	public WebElement annoyingPopup;
 
 }

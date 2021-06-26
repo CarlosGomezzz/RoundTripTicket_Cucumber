@@ -3,6 +3,7 @@ package StepDef;
 import static org.junit.Assert.assertEquals;
 
 import Pages.HomePage;
+import Utilities.BrowserUtilities;
 import Utilities.ConfigReader;
 import Utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -20,14 +21,13 @@ public class buyInRupees {
 
 	@When("user clicks on flights and chooses time, date, departure for flight")
 	public void user_clicks_on_flights_and_chooses_time_date_departure_for_flight() {
-	//	hp.acctButton.click();
 		hp.flightButton.click();
 		hp.oneWayButton.click();
 		hp.fromButton.click();
 		hp.fromInputBox.sendKeys(ConfigReader.getProperty("fromAirport"));
 		hp.IAD.click();
-		hp.toButton.click();
-		hp.toButton.sendKeys(ConfigReader.getProperty("toAirport"));
+		BrowserUtilities.waitFor(2);
+		hp.toInputBox.sendKeys(ConfigReader.getProperty("toAirport"));
 		hp.SEA.click();
 	}
 
