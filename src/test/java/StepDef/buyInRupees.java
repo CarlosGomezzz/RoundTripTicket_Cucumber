@@ -21,6 +21,7 @@ public class buyInRupees {
 
 	@When("user clicks on flights and chooses time, date, departure for flight")
 	public void user_clicks_on_flights_and_chooses_time_date_departure_for_flight() {
+		hp.acctButton.click();
 		hp.flightButton.click();
 		hp.oneWayButton.click();
 		hp.fromButton.click();
@@ -29,15 +30,12 @@ public class buyInRupees {
 		BrowserUtilities.waitFor(2);
 		hp.toInputBox.sendKeys(ConfigReader.getProperty("toAirport"));
 		hp.SEA.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		hp.nextMonth.click();
-		
+		for (int i = 1; i <= 8; i++) {
+			hp.nextMonth.click();
+
+		}
+		hp.Mar27.click();
+		hp.searchButton.click();
 	}
 
 	@When("user chooses a flight")

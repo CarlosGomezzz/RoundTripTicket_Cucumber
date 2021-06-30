@@ -44,5 +44,11 @@ public class HomePage {
 
 	@FindBy(xpath = "//span[@aria-label='Next Month']")
 	public WebElement nextMonth;
+	
+	@FindBy(xpath= "//div[@aria-label='Sun Mar 27 2022']")
+	public WebElement Mar27;
+	
+	@FindBy(xpath = "//a[@class='primaryBtn font24 latoBold widgetSearchBtn ']")
+	public WebElement searchButton;
 
 }
