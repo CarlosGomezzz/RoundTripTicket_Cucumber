@@ -1,5 +1,7 @@
 package Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,6 +29,9 @@ public class HomePage {
 	@FindBy(xpath = "//input[@aria-controls='react-autowhatever-1']")
 	public WebElement fromInputBox;
 
+	@FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li")
+	public List<WebElement> fromAirportList;
+
 	@FindBy(xpath = "//li[@id='react-autowhatever-1-section-0-item-2']")
 	public WebElement IAD;
 
@@ -39,15 +44,18 @@ public class HomePage {
 	@FindBy(xpath = "//p[@class='font12 lightGreyText textCenter latoBold appendBottom15 defaultCursor']")
 	public WebElement annoyingPopup;
 
+	@FindBy(xpath = "//*[@id=\"SW\"]/div[1]/div[1]/ul/li[3]/div[3]/div/div[2]/div/p/label")
+	public WebElement annoyingPopup2;
+
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[1]/div[2]/div[1]/div[3]/label/span")
 	public WebElement departure;
 
 	@FindBy(xpath = "//span[@aria-label='Next Month']")
 	public WebElement nextMonth;
-	
-	@FindBy(xpath= "//div[@aria-label='Sun Mar 27 2022']")
+
+	@FindBy(xpath = "//div[@aria-label='Sun Mar 27 2022']")
 	public WebElement Mar27;
-	
+
 	@FindBy(xpath = "//a[@class='primaryBtn font24 latoBold widgetSearchBtn ']")
 	public WebElement searchButton;
 

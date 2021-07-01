@@ -12,6 +12,12 @@ public class resultsPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(xpath = "//div[@id='flight_list_item_0_RKEY:f7bea2ca-ee56-48b9-8cbd-731a8ac812b0:8_0']/div/div[2]/div[2]/div/button")
+	@FindBy(xpath = "//div[@class='listingRhs']/p")
+	public WebElement flightsFromToText;
+
+	@FindBy(xpath = "(//button[contains(@id,'bookbutton')])[1]")
 	public WebElement viewPricesButton;
+
+	@FindBy(xpath = "(//button[contains(@id,'bookbutton')])[2]")
+	public WebElement bookNowButton;
 }

@@ -5,7 +5,7 @@ Background:
 	
 Scenario: user buys ticket from IAD to SEA in Rupees 
 	When user clicks on flights and chooses time, date, departure for flight 
-	And user chooses a flight 
+	And user chooses a flight and confirms itinerary 
 	And user enters passanger info 
 	And user enters payment info 
 	Then user gets failure message 
